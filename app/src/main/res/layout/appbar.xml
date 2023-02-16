@@ -4,8 +4,8 @@
     android:layout_height="?attr/actionBarSize"
     android:id="@+id/myTollBar"
     android:background="@color/purple_200"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark"
-
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
     >
+
 
 </androidx.appcompat.widget.Toolbar>
