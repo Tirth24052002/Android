@@ -1,7 +1,5 @@
 package com.example.myapplication.javapractice;
 
-import java.util.Date;
-
 //Class
 class ClassPractice {
     String manager;
@@ -188,7 +186,7 @@ class Dog {
     String name, breed, color;
     int age, weight;
     public Dog(String name, String breed, String color, int age, int weight) {
-        this.age = age;
+                this.age = age;
                 this.breed = breed;
                 this.name = name;
                 this.color = color;
@@ -220,7 +218,7 @@ class Newday {
         System.out.println(som);
     }
 }
-final  class Custom {
+final class Custom {
       String nameing;
     int value;
 
@@ -228,5 +226,134 @@ final  class Custom {
         Custom ne = new Custom();
         ne.nameing = "Menbers";
         ne.value = 12344;
+    }
+}
+class Abc {
+    String name;
+    int age;
+    void details(String name, int age) {
+        this.age = age;
+        this.name = name;
+    }
+    void printDetails() {
+        System.out.println("The Person Name is " + name + " Person Age is " + age );
+    }
+
+
+//    public static void main(String[] args) {
+//        Abc Vivek = new Abc();
+//        Vivek.age = 12;
+//        Vivek.name = "Vivek Singh";
+//        //Vivek.details(Vivek.name, Vivek.age);
+//        Vivek.printDetails();
+//    }
+    class Xyz {
+        Abc objOne = new Abc();
+        public void main(String[] args) {
+            objOne.name = "mohir";
+            objOne.age = 22;
+            objOne.printDetails();
+            super.toString();
+        }
+    }
+
+}
+class Carz {
+    String name = "Mercedes";
+    int price = 3_00_000;
+}
+class CheckCar extends Carz {
+    String name;
+    void  someOtherColor() {
+        System.out.println(super.name);
+        System.out.println(super.price);
+        System.out.println(name);
+    }
+
+    public static void main(String[] args) {
+        Carz mustinag = new Carz();
+        System.out.println(mustinag.name);
+        System.out.println(mustinag.price);
+    }
+}
+ class TestCarz {
+    static class engineDetails {
+        int engineCapacity, engineHorsePower;
+    }
+     public static void main(String[] args) {
+         Carz callCarz = new Carz();
+         System.out.println(callCarz.name);
+         System.out.println(callCarz.price);
+
+     }
+}
+class otherCar extends  TestCarz {
+    String aboutCar;
+
+    public static void main(String[] args) {
+
+    }
+}
+
+class JavaStaticExample {
+   static String s = "The Static Data";
+    static class NestedClass {
+        public void show() {
+            System.out.println(s);
+        }
+    }
+
+    public static void main(String[] args) {
+        JavaStaticExample.NestedClass obj = new JavaStaticExample.NestedClass();
+                obj.show();
+    }
+}
+class  InheritStaticData extends  JavaStaticExample {
+    static String otherStaticData;
+    public static void main(String[] args) {
+        JavaStaticExample.NestedClass getDat = new JavaStaticExample.NestedClass();
+        getDat.show();
+        otherStaticData = "The other Static Dat is intialized";
+        System.out.println(otherStaticData);
+    }
+
+}
+
+class InheritanceStaticMethod {
+    void  printData() {
+        System.out.println("The Data of Main Methos");
+    }
+}
+class MethodOverride extends InheritStaticData {
+    void printData() {
+        super.toString();
+        System.out.println("Get DAta");
+    }
+}
+class Employ {
+    private  float salary;
+    Employ(float salary) {
+        System.out.println("Emp Create!");
+        this.salary = salary;
+    }
+    public float getSalary() {
+        return  salary;
+    }
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+}
+class Programmer extends  Employ {
+    int bonus;
+    Programmer(float salary) {
+        super(salary);
+        this.bonus = 120_000;
+        System.out.println("Programmer Created");
+    }
+}
+class Inherit {
+    public static void main(String[] args) {
+        final Programmer Kimmich = new Programmer(10_00_000);
+        System.out.println(Kimmich.bonus);
     }
 }
