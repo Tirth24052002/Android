@@ -1,16 +1,14 @@
 
 package com.example.myapplication.javapractice;
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.List;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Map;
 
 public class CollectionTypes {
     public static void main(String[] args) {
@@ -130,4 +128,91 @@ public class CollectionTypes {
         return Arrays.asList("iPhone","Ubuntu", "Android", "Mac OS");
     }
 }
+class collectionAndLambas {
+    public static void main(String[] args) {
+        List<String> personList = Arrays.asList("Carl", "Fik");
+        List<String> anotherPersonList = new ArrayList<>();
+        anotherPersonList.add("larson");
+        anotherPersonList.add("Viu");
+        personList.forEach(System.out::println);
+        anotherPersonList.forEach(System.out::println);
+        //
+        List<Integer> list = Arrays.asList(3, 2, 1, 4, 5, 6, 7, 8, 9, 10, 1);
+        for (Integer integer : list) {
+            System.out.println(integer);
+        }
+    }
+}
+class ShortingList{
+    public static void main(String[] args) {
+        System.out.println("Sorting with natural order");
+        List<String> p1 = createPersons();
+        p1.sort(null);
+        p1.forEach(System.out::println);
 
+        System.out.println("Sorting with the lamda comparison ");
+        List<String> p2 = createPersons();
+        p2.sort((s1, s2) -> s1.compareToIgnoreCase(s2));
+        p2.forEach(System.out::println);
+
+        System.out.println("Sorting with method reference");
+        List<String> p3 = createPersons();
+        p3.sort(String::compareToIgnoreCase);
+        p3.forEach(System.out::println);
+    }
+    private static  List<String> createPersons() {
+        return Arrays.asList("Manan", "Hitesh", "Ajay", "Leon");
+    }
+}
+class HashMaps {
+    public static void main(String[] args) {
+        Map<String, String> map = Map.of("keyONe", "KeyTow", "KeyThree", "KeyThree");
+        Map<String, String> mapTwo = Map.ofEntries(
+                Map.entry("keyOne", "ValueOne"),
+                Map.entry("KeyTwo", "ValueTwo"),
+                Map.entry("Ket100", "Value100")
+        );
+        Map<String, String> mapThree = new HashMap<>();
+        mapThree.put("Andorid", "Mobile");
+        mapThree.put("Eclipse", "Java");
+        mapThree.put("Eclispse", "Java");
+        mapThree.put("Git", "Version control system");
+        mapThree.forEach((k,v) -> System.out.printf("%s %s%n", k, v));
+
+        Map<String, String> mapFour = new HashMap<>();
+        mapFour.put("Andorid", "Mobile");
+        mapFour.put("Eclipse", "Java");
+        mapFour.put("Eclispse", "Java");
+        mapFour.put("Git", "Version control system");
+        String[] keys = mapFour.keySet().toArray(new String[mapFour.keySet().size()]);
+        for (String string: keys) {
+            System.out.println(string);
+        }
+        List<String> list = new ArrayList<String>(mapFour.keySet());
+        for(String string: list) {
+            System.out.println(string);
+        }
+        Map<String, Integer> mapFive = new HashMap<>();
+        mapFive.put("Android", 1 + mapFive.getOrDefault("Android", 0));
+        mapFive.forEach((k, v) -> System.out.printf("%s %s%n", k, v));
+
+        Map<String, Integer> mapSix = Map.of();
+        mapSix.keySet().forEach(key -> System.out.println(key + " " + mapSix.get(key)));
+        Collections.reverse(list);
+        Collections.shuffle(list);
+        Collections.sort(list);
+        System.out.println(list);
+    }
+}
+class LinkedLst{
+    public static void main(String[] args) {
+        LinkedList<String> l1 = new LinkedList<String>();
+        l1.add("A");
+        l1.add("B");
+        l1.add("C");
+        l1.add("D");
+        l1.add("E");
+        l1.add(2, "E");
+        System.out.println(l1);
+    }
+}
