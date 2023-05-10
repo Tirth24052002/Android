@@ -1,5 +1,6 @@
 
 package com.example.myapplication.javapractice;
+import java.lang.reflect.Array;
 import java.security.Key;
 import java.util.ArrayList;
 import java.util.List;
@@ -214,5 +215,80 @@ class LinkedLst{
         l1.add("E");
         l1.add(2, "E");
         System.out.println(l1);
+    List<String> l2 = new ArrayList<>();
+    l2.add("aedfd");
+    l2.add("ab");
+    l2.add("ac");
+    l1.sort(String::compareTo);
+    }
+
+}
+class ListExample {
+    public static void main(String[] args) {
+        ArrayList<String> name = new ArrayList<String>();
+        name.add("ccc");
+        name.add("dddd");
+        name.add("aaaa");
+        name.add("bbbb");
+        System.out.println(name);
+        Collections.sort(name);
+
+        System.out.println(name);
+        Collections.sort(name, Collections.reverseOrder());
+        System.out.println(name);
+
+      //  Array<Integer> numr = new ArrayList<>();
+        int[] marks = new int[] {3,2,1};
+//        numr.add(2);
+//        numr.add(123);
+//        numr.add(22);
+//        numr.add(990);
+//        numr.add(12);
+    //    System.out.println(numr);
+        System.out.println(marks);
+        Arrays.sort(marks);
+        System.out.println(Arrays.toString(marks));
+        int[] nz = new int[] {111, 0, 22, 2, 12, 44};
+        Arrays.sort(nz);
+        System.out.println(Arrays.toString(nz));
+        LinkedList<String> carz = new LinkedList<String>();
+        carz.add("Ferraro");
+        carz.add("Bmw");
+        carz.add("Lamborgami");
+        carz.add("Ford");
+        System.out.println(carz);
+        Collections.sort(carz);
+        System.out.println(carz);
+        Collections.sort(carz,Collections.reverseOrder());
+        System.out.println(carz);
+
+    }
+}
+class AllTypesOfList {
+    public static void main(String[] args) {
+        List<String> one = new ArrayList<String>();
+        one.add("a");
+        one.add("z");
+        one.add("g");
+        one.add("k");
+        System.out.println(one);
+        Collections.sort(one);
+        System.out.println(one);
+        for (String i: one) {
+            System.out.println(i);
+        }
+    }
+}
+class HasMapPractice {
+    public static void main(String[] args) {
+        HashMap<String,Integer> nameAge = new HashMap<String, Integer>();
+        nameAge.put("Tirth", 20);
+        nameAge.put("Nemo", 22);
+        nameAge.put("Mamjin",12);
+        nameAge.put("liio",5);
+        nameAge.put("hix", 22);
+        System.out.println(nameAge);
+        System.out.println(nameAge
+        );
     }
 }

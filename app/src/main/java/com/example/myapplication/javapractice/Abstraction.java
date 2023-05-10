@@ -60,3 +60,20 @@ class AbstarctCar {
   scorp.startEngine();
  }
 }
+abstract class MathRequirement {
+ abstract void add(int a, int b);
+ abstract void sub(int c, int d);
+}
+class DoCalculations extends MathRequirement {
+ public static void main(String[] args) {
+  DoCalculations addition = new DoCalculations();
+  addition.add(123, 321);
+  addition.sub(321, 123);
+ }
+ void add(int a, int b) {
+  System.out.println(a + b);
+ }
+ void sub(int c, int d) {
+  System.out.println(c - d);
+ }
+}
