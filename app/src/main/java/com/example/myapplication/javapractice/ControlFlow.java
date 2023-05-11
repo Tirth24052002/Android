@@ -63,3 +63,29 @@ class ForLoopExamples {
         }
     }
 }
+class ConditionalFoeLoops {
+    public static void main(String[] args) {
+        for(int i = 0;i <10;i++){
+            if (i % 2 == 0) {
+                System.out.println("The Even numbers are" + i);
+            }
+            else {
+                System.out.println("The odd numbers are" + i);
+            }
+        }
+        int z;
+        for (z =0;z < 100; z++) {
+            if(z % 5 == 0) {
+                System.out.println("The number multiple of 5 is" + z);
+            }
+        }
+        int one = 22, two = -1;
+        if (one > 0 && two > 0) {
+            System.out.println(one + two);
+        }
+        int x = 123, y = 321;
+        if(x <y){
+            System.out.println(y -x);
+        }
+    }
+}

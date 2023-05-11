@@ -54,3 +54,15 @@ public class DecisionStatements {
         System.out.println("Before the return");
     }
 }
+class DescisionDemo {
+    public static void main(String[] args) {
+        String keyPass = "secret is here";
+        if (keyPass.contains("Key")) {
+            System.out.println("Key pass contain key 'key'");
+        } else if (keyPass.startsWith("secret")) {
+            System.out.println("Key pass starts with 'secret'");
+        } else {
+            System.out.println("failed case");
+        }
+    }
+}

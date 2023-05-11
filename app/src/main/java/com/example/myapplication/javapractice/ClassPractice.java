@@ -357,3 +357,35 @@ class Inherit {
         System.out.println(Kimmich.bonus);
     }
 }
+abstract class ParentDemoPractice {
+     abstract void name();
+}
+class DemoPractice extends ParentDemoPractice {
+    public static void main(String[] args) {
+        DemoPractice check = new DemoPractice();
+        check.name();
+        if(check instanceof ParentDemoPractice){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+    }
+    @Override
+    void name() {
+        System.out.println("The name of the Person is Something");
+    }
+}
+class LabledLoops {
+    public static void main(String[] args) {
+        outer:
+        for (int i = 0; i <= 5; i++) {
+            inner:
+            for (int j = 0; j <= 5; j++) {
+                if (i % 2 ==0) {
+                    break inner;
+                }
+                System.out.println(i + "" +  j + " ");
+            }
+        }
+    }
+}

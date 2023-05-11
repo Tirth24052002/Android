@@ -12,6 +12,7 @@ public class Interfaces {
             System.out.println("The animal Type");
         }
     }
+
     static class Pig implements Animal, AnimalTwo {
 
         public void animalSound() {
@@ -92,37 +93,46 @@ abstract class EmployeeDetails {
         System.out.println("The Employee name is " + name);
         System.out.println("The Employee id is " + emp_id);
     }
-    public abstract void confedentialDetails(String s, int p );
+
+    public abstract void confedentialDetails(String s, int p);
 }
+
 class Hr extends EmployeeDetails {
-    private  int salary;
-    private  String performance;
+    private int salary;
+    private String performance;
+
     @Override
     public void confedentialDetails(String s, int p) {
         this.salary = p;
         this.performance = s;
-        System.out.println("Salary "+ p);
+        System.out.println("Salary " + p);
         System.out.println("Performance " + s);
     }
+
     public static void main(String[] args) {
-     Hr checkDetails = new Hr();
-     checkDetails.confedentialDetails("Excellent", 200000);
+        Hr checkDetails = new Hr();
+        checkDetails.confedentialDetails("Excellent", 200000);
     }
 }
+
 interface StaticInterface {
-    static void printDetails(){
+    static void printDetails() {
         System.out.println("My name is ");
     }
 }
+
 class ApplyInterface implements StaticInterface {
     public static void main(String[] args) {
         StaticInterface.printDetails();
     }
 }
+
 interface MathOperation {
     void add(int noOne, int noTwo);
+
     void sub(int noOne, int noTwo);
 }
+
 class DoMath implements MathOperation {
 
     @Override
@@ -132,12 +142,55 @@ class DoMath implements MathOperation {
 
     @Override
     public void sub(int noOne, int noTwo) {
-        System.out.println("The Substraction is " + (noOne-noTwo));
+        System.out.println("The Substraction is " + (noOne - noTwo));
     }
 
     public static void main(String[] args) {
         DoMath add = new DoMath();
-        add.add(123,321);
-        add.sub(321,123);
+        add.add(123, 321);
+        add.sub(321, 123);
+    }
+}
+interface CarSize {
+    default void setPrice(int p) {
+        System.out.println("The carsize");
+    }
+     default void check() {
+         System.out.println("From Car size");
+     }
+}
+interface CarPrice {
+    default void setPrice(int p) {
+        System.out.println("THe Car Price");
+    }
+    default void petrolCapacit(int p) {
+        System.out.println(p);
+    }
+    default void check() {
+        System.out.println("From Car Price");
+    }
+}
+class CarName implements CarPrice, CarSize {
+    public static void main(String[] args) {
+        CarName cn = new CarName();
+        cn.check();
+
+    }
+
+    @Override
+    public void setPrice(int p) {
+        CarPrice.super.setPrice(p);
+        CarPrice.super.setPrice(23);
+    }
+
+    @Override
+    public void petrolCapacit(int p) {
+        CarPrice.super.petrolCapacit(p);
+    }
+
+    @Override
+    public void check() {
+        CarPrice.super.check();
+        CarSize.super.check();
     }
 }

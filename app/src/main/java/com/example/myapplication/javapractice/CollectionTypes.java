@@ -288,7 +288,6 @@ class HasMapPractice {
         nameAge.put("liio",5);
         nameAge.put("hix", 22);
         System.out.println(nameAge);
-        System.out.println(nameAge
-        );
+        System.out.println(nameAge);
     }
 }
