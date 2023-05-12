@@ -2,17 +2,6 @@ package com.example.myapplication.kotlinpractice
 
 import android.provider.Telephony.MmsSms.PendingMessages
 
-fun println(
-    vararg messages: Any?,
-    seperator: String = " ",
-    terminator: String = "\n"
-) {
-    messages.forEach {
-        print(it)
-        print(seperator)
-    }
-    print(terminator)
-}
 fun main() {
     print("Hello World!")
     val countOfEvenNumbers: Int = 10
