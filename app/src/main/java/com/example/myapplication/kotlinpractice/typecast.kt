@@ -2,7 +2,9 @@ package com.example.myapplication.kotlinpractice
 
 fun main() {
     println("Hello")
-    if (obj !is String) return
+    if (obj !is String) {
+        println("Not a String")
+    }
     else {
         print(obj.length)
     }
@@ -13,7 +15,7 @@ fun main() {
 
 }
 
-val obj ="afdad"
+val obj: Any? = null
 fun demos(x: Any) {
     if (x is String) {
         println(x.length)
@@ -31,7 +33,7 @@ fun doSomething(x: Any) {
         is Int -> println("The ENtered data is in integer")
         is Double -> println("The entered data is in Double")
         is String -> println("The Entered data is a String")
-        is IntArray -> println("The Entered data is integer array")
+        is IntArray -> println("The Entered data  is integer array")
     }
 }
 val one = 123
