@@ -33,8 +33,13 @@ fun main() {
     Country().setup()
     var area = pi * 4 * 4
     println(area)
+   var nos =  mutableListOf<Int>(4 , 5 ,1, 2, 3)
+    println(nos.sorted())
+    var namesAngAge = mutableMapOf<String,ArrayList<String>>("one" to arrayListOf<String>("12", "1", "12345" ,"44", "123"))
+    namesAngAge["one"]?.sort()
+    println(namesAngAge["one"]?.sorted())
+    println(namesAngAge["one"])
 }
-
 
 class Address {
     var name: String = "Holmes, Sherlock"

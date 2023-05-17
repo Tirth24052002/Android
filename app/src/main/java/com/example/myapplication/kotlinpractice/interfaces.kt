@@ -7,8 +7,19 @@ fun main() {
     d.bar()
     d.foo()
     println("is 6 even? - ${isEven.accept(6)}")
+
+    var namOfPerson = NameAndAge()
+    namOfPerson.printName()
 }
 
+class NameAndAge{
+    lateinit var personNameIs: String
+    fun printName() {
+        if(this::personNameIs.isInitialized) {
+            println("The name is initialzded")
+        }
+    }
+}
 interface MyInterface {
     fun bar()
     fun foo() {
