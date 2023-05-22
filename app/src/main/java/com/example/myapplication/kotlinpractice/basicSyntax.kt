@@ -1,6 +1,7 @@
 package com.example.myapplication.kotlinpractice
 
 fun main(args: Array<String>) {
+
     println(args.contentToString())
     print("Hello")
     print("World")
@@ -112,6 +113,8 @@ fun main(args: Array<String>) {
     }
     foo()
     foo1()
+   val test =  TestLazy()
+    println(test.foo2())
 }
 enum class Bit {
     ZERo, ONE
@@ -204,5 +207,12 @@ fun  foo1() {
         }
 
         print("done with nested loop")
+    }
+}
+class TestLazy {
+    lateinit var nameOfPersones: String
+    fun foo2(): Boolean {
+        nameOfPersones = "nameGiven"
+        return ::nameOfPersones.isInitialized
     }
 }

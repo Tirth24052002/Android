@@ -1,16 +1,18 @@
 package com.example.myapplication.kotlinpractice
 
+import java.io.File
+import javax.sql.DataSource
 fun main() {
 
     println("Hello World!!!".formattedString())
 
     val list1 = mutableListOf("One", "Two", "Three")
-    list1.swap(0, 2 )
+    list1.swap(0, 2)
     println(list1)
 
 
     open class Shape
-    class Rectangle: Shape()
+    class Rectangle : Shape()
 
     fun Shape.getName() = "Shape"
     fun Rectangle.getName() = "Rectangle"
@@ -21,9 +23,14 @@ fun main() {
     printClassName(Rectangle())
 
     class Example {
-        fun printFunctionType() { println("Class method") }
+        fun printFunctionType() {
+            println("Class method")
+        }
     }
-    fun Example.printFunctionType() { println("Extension function") }
+
+    fun Example.printFunctionType() {
+        println("Extension function")
+    }
     Example().printFunctionType()
 
     fun Any?.toString(): String {
@@ -37,13 +44,23 @@ fun main() {
     val listColor = listOf("red", "green", "blue")
     listColor.getLongestString()
 
+    var name = "Thismena"
+    println(name.formattedStringUppercase())
+
+    var cal = doSomeCalculation {
+        dolooping(1000000)
+    }
+
 }
+
 fun List<String>.getLongestString() {
 
 }
+
 class MyClass1 {
-    companion object { }
+    companion object {}
 }
+
 fun MyClass1.Companion.printCompanion() {
     println("companion")
 }
@@ -54,9 +71,9 @@ fun MyClass1.Companion.printCompanion() {
 //}
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
-   val tmp = this[index1]
-   this[index1] = this[index2]
-   this[index2] = tmp
+    val tmp = this[index1]
+    this[index1] = this[index2]
+    this[index2] = tmp
 
     calculateTimeAndRun {
         loop(10000)
@@ -68,7 +85,7 @@ fun String.formattedString(): String {
 }
 
 inline fun calculateTimeAndRun(fn: () -> Unit) {
-    val start: Long  = System.currentTimeMillis()
+    val start: Long = System.currentTimeMillis()
     fn()
     val end: Long = System.currentTimeMillis()
     println("Time taken ${end - start} ms")
@@ -79,4 +96,33 @@ fun loop(n: Long) {
 
     }
 }
+
+fun String.formattedStringUppercase(): String {
+    return "---------------------\n${this.uppercase()}\n---------------------------------"
+}
+
+fun doSomeCalculation(fn: () -> Unit) {
+    var start = System.currentTimeMillis()
+    fn()
+    var end = System.currentTimeMillis()
+    println("Thme Taken ${end - start} ms")
+}
+
+fun dolooping(n: Long) {
+    for (i in 1..n) {
+
+    }
+}
+
+sealed interface Error
+sealed class IoError {
+    constructor()
+    private constructor(decription: String) : this()
+}
+
+class FileReadError(val file: File) : IoError()
+class DatabaseError(val source: DataSource) : IoError()
+
+object RuntimeError : Error
+
 

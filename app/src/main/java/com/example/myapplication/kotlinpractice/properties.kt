@@ -35,7 +35,7 @@ fun main() {
     println(area)
    var nos =  mutableListOf<Int>(4 , 5 ,1, 2, 3)
     println(nos.sorted())
-    var namesAngAge = mutableMapOf<String,ArrayList<String>>("one" to arrayListOf<String>("12", "1", "12345" ,"44", "123"))
+    var namesAngAge = mutableMapOf<String,ArrayList<Int>>("one" to arrayListOf<Int>(22, 2, 21, 12, 44, 16, 13))
     namesAngAge["one"]?.sort()
     println(namesAngAge["one"]?.sorted())
     println(namesAngAge["one"])
