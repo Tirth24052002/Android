@@ -46,6 +46,5 @@ fun main() {
     var nameListCheck: List<String> = nullableNameList.filterNotNull()
     println(nameListCheck)
 
-
  }
 
