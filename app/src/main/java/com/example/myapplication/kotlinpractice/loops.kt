@@ -12,7 +12,7 @@ fun main() {
     useWhen(2)
     rangeWhen(120)
     hasPrefix("apple")
-    for (i in 100 downTo 50 step 5) {
+    for (i in 6 downTo 50 step 5) {
         println(i)
     }
     var x = 12
