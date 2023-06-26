@@ -12,6 +12,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".uiwidgets.GridLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.ViewsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
