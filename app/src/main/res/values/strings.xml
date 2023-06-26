@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="select_the_gender">Select The Gender</string>
+    <string name="fill_the_following_details_to_sign_up">Fill the Following Details to Sign Up</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="toggle_material_switch">Toggle Material Switch</string>
+    <string name="switch_with_app_compat">switch with App Compat</string>
+    <string name="switchcompat">switchcompat</string>
+    <string name="appcompattogglebutton">AppCompatToggleButton</string>
+    <string name="apply">Apply</string>
 </resources>
