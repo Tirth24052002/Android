@@ -9,4 +9,20 @@
     <string name="switchcompat">switchcompat</string>
     <string name="appcompattogglebutton">AppCompatToggleButton</string>
     <string name="apply">Apply</string>
+    <string name="selected_button">Selected Button:</string>
+    <string name="three">Three</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="title_activity_tab_bar">TabBarActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_you_e_mail_address">Enter You E-mail Address</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

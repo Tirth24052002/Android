@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupNavigationButtons() {
-            val uiWidgetsButton: Button = findViewById(R.id.viewButton);
+            val uiWidgetsButton: Button = findViewById(R.id.uiViewsBtn);
             uiWidgetsButton.setOnClickListener {
                 val intent = Intent(this, ViewsActivity::class.java)
                 startActivity(intent)

@@ -14,11 +14,12 @@ class ViewsActivity : AppCompatActivity() {
         setupLinearLayout()
         setupConstraintLayout()
         setupGridLayout()
+        setupTableLayout()
     }
 
     private fun setupLinearLayout() {
-        val uiWidgetsButton: Button = findViewById(R.id.btnLinearLayout)
-        uiWidgetsButton.setOnClickListener {
+        val linearBtn: Button = findViewById(R.id.btnLinearLayout)
+        linearBtn.setOnClickListener {
             val intent = Intent(this, LinearLayoutActivity::class.java)
             startActivity(intent)
             Toast.makeText(applicationContext,"Linear Layout Activity ", Toast.LENGTH_LONG).show()
@@ -26,8 +27,8 @@ class ViewsActivity : AppCompatActivity() {
     }
 
     private fun setupConstraintLayout() {
-        val uiWidgetsButton: Button = findViewById(R.id.btnConstraintLayout)
-        uiWidgetsButton.setOnClickListener {
+        val constraintBtn: Button = findViewById(R.id.btnConstraintLayout)
+        constraintBtn.setOnClickListener {
             val intent = Intent(this, ConstraintLayoutActivity::class.java)
             startActivity(intent)
             Toast.makeText(applicationContext, "Constraint Layout Activity ", Toast.LENGTH_LONG)
@@ -36,10 +37,24 @@ class ViewsActivity : AppCompatActivity() {
     }
 
     private fun setupGridLayout() {
-        val uiWidgetsButton: Button = findViewById(R.id.btnGridLayout)
-        uiWidgetsButton.setOnClickListener {
+        val gridBtn: Button = findViewById(R.id.btnGridLayout)
+        gridBtn.setOnClickListener {
             val intent = Intent(this, GridLayoutActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    private fun setupTableLayout() {
+        val tableBtn: Button = findViewById(R.id.btnTableLayoutButton)
+        tableBtn.setOnClickListener {
+            val intent = Intent(this, TableLayoutActivity::class.java)
+            startActivity(intent)
+        }
+        val btnExercise: Button = findViewById(R.id.btnExerciseScree)
+        btnExercise.setOnClickListener {
+            val intent = Intent(this, WidgetsScreenActivity::class.java)
+            startActivity(intent)
+
         }
     }
 }
