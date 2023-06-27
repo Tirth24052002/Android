@@ -7,18 +7,21 @@
     tools:context=".uiwidgets.ConstraintLayoutActivity">
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/smileCheckBox"
         android:layout_width="102dp"
         android:layout_height="27dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="40dp"
         android:text="Smile"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/angryCheckBox"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/confusedCheckBox"
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/angryCheckBox"
         android:layout_width="88dp"
         android:layout_height="23dp"
         android:layout_marginTop="44dp"
@@ -29,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/confusedCheckBox"
         android:layout_width="104dp"
         android:layout_height="31dp"
         android:layout_marginStart="88dp"
@@ -101,16 +104,17 @@
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/nameQuestion"
         app:srcCompat="@drawable/ic_toasticon" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nameQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:textSize="40sp"
-        android:text="Name the Emoji?   "
+        android:textAlignment="center"
+        android:text="Name the Emoji?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggle" />

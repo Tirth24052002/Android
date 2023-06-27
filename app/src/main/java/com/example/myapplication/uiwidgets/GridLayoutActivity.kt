@@ -1,5 +1,6 @@
 package com.example.myapplication.uiwidgets
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import com.example.myapplication.R
+import com.google.android.material.snackbar.Snackbar
 
 class GridLayoutActivity : AppCompatActivity() {
      lateinit var radiogroup: RadioGroup
@@ -18,7 +20,7 @@ class GridLayoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grid_layout)
-        textView = findViewById(R.id.textView4)
+        textView = findViewById(R.id.selectedView)
         radiogroup = findViewById(R.id.radioGroup)
         val buttonApply: Button = findViewById(R.id.button2)
         buttonApply.setOnClickListener {
@@ -26,10 +28,17 @@ class GridLayoutActivity : AppCompatActivity() {
             radioButton = findViewById(radioId)
             textView?.setText("Your Choice is ${radioButton?.text}")
             checkButton(buttonApply)
+            val fab: View = findViewById(R.id.floatBtn)
+            fab.setOnClickListener { view ->
+                Snackbar.make(view, "All CHed Snack Bar", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null)
+                    .show()
+                val intent = Intent(this, ViewsActivity::class.java)
+                startActivity(intent)
+            }
         }
-
     }
-        fun checkButton(v: View) {
+    fun checkButton(v: View) {
             val radioId: Int = radiogroup.checkedRadioButtonId
             radioButton = findViewById(radioId)
             Toast.makeText(

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        tools:context=".uiwidgets.TableLayoutActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+
+                android:text="Customer Feedback "
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Give us you valuable feedback" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="First Name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RatingBar
+                android:layout_marginHorizontal="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="401dp"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+    </TableLayout>
+</FrameLayout>
