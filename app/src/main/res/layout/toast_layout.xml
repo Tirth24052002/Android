@@ -20,7 +20,7 @@
         android:id="@+id/toast_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Layout Activity"
+        android:text="This is Custom Toast"
         android:textColor="@color/white"
         android:textSize="18sp"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

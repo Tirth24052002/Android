@@ -2,14 +2,10 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.example.myapplication.uicomponents.ComponentsActivity
 import com.example.myapplication.uiwidgets.ViewsActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,10 +19,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupNavigationButtons() {
-            val uiWidgetsButton: Button = findViewById(R.id.uiViewsBtn);
+            val uiWidgetsButton: Button = findViewById(R.id.uiViewsBtn)
             uiWidgetsButton.setOnClickListener {
                 val intent = Intent(this, ViewsActivity::class.java)
                 startActivity(intent)
             }
+            val uiComponentsBtn: Button = findViewById(R.id.buttonUIComponents)
+        uiComponentsBtn.setOnClickListener {
+            val intent = Intent(this, ComponentsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

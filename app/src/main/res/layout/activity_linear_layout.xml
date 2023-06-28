@@ -102,23 +102,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/personGender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <RadioButton
-            android:id="@+id/rbFemale"
-            android:layout_width="201dp"
-            android:layout_height="wrap_content"
-            android:text="@string/female"
-            android:drawableEnd="@drawable/ic_woman_icon"
-            android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_woman_icon"
+                android:text="@string/female" />
 
-        <RadioButton
-            android:id="@+id/ebMale"
-            android:layout_width="208dp"
-            android:layout_height="wrap_content"
-            android:text="@string/male"
-            android:layout_weight="1"
-            android:drawableEnd="@drawable/ic_man_icon"/>
+            <RadioButton
+                android:id="@+id/ebMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_man_icon"
 
+                android:text="@string/male" />
+        </RadioGroup>
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

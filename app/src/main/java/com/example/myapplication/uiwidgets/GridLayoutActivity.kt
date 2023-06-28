@@ -21,14 +21,14 @@ class GridLayoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grid_layout)
         textView = findViewById(R.id.selectedView)
-        radiogroup = findViewById(R.id.radioGroup)
-        val buttonApply: Button = findViewById(R.id.button2)
+        radiogroup = findViewById(R.id.radioGroupNumbers)
+        val buttonApply: Button = findViewById(R.id.btnApply)
         buttonApply.setOnClickListener {
             val radioId: Int = radiogroup.checkedRadioButtonId
             radioButton = findViewById(radioId)
             textView?.setText("Your Choice is ${radioButton?.text}")
             checkButton(buttonApply)
-            val fab: View = findViewById(R.id.floatBtn)
+            val fab: View = findViewById(R.id.btnDone)
             fab.setOnClickListener { view ->
                 Snackbar.make(view, "All CHed Snack Bar", Snackbar.LENGTH_LONG)
                     .setAction("Action", null)
