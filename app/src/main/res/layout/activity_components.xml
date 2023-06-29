@@ -60,4 +60,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/buttonTextInputLayout"
         app:layout_constraintTop_toBottomOf="@+id/buttonTextInputLayout" />
+
+    <Button
+        android:id="@+id/buttonAppBar"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="76dp"
+        android:text="App Bar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTabLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonTabLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTabLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
