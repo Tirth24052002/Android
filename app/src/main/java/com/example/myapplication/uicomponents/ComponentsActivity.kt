@@ -44,5 +44,11 @@ class ComponentsActivity : AppCompatActivity() {
             val intent = Intent(this, TabLayoutActivity::class.java)
             startActivity(intent)
         }
+
+        val btnAppBar: Button = findViewById(R.id.buttonAppBar)
+        btnAppBar.setOnClickListener {
+            val intent = Intent(this, AppBarActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
