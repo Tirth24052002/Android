@@ -20,31 +20,77 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <GridLayout
-        app:layout_constraintTop_toBottomOf="@id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:rowCount="5"
+        android:layout_marginTop="48dp"
         android:columnCount="2"
-        >
+        android:rowCount="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4">
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="0"
+            android:layout_rowSpan="3"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/icon_facebook" />
 
         <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/icon_instagram" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            app:srcCompat="@drawable/icon_google" />
+
+        <ImageView
             android:id="@+id/imageView12"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_row="0"
-            android:layout_column="1"
             android:layout_columnWeight="1"
-            app:srcCompat="@drawable/icon_instagram" />
-    </GridLayout>
+            app:srcCompat="@drawable/icon_spotify" />
 
+        <ImageView
+            android:id="@+id/iV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:src="@drawable/icon_facebook" />
+
+        <ImageView
+            android:id="@+id/iV6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/icon_google" />
+
+        <ImageView
+            android:id="@+id/iV7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/icon_facebook" />
+
+        <ImageView
+            android:id="@+id/iV8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="2"
+            android:src="@drawable/icon_spotify" />
+
+    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
