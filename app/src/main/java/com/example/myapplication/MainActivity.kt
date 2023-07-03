@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar
 import com.example.myapplication.layouts.ConstraintLayoutActivity
 import com.example.myapplication.layouts.ConstraintScreenActivity
 import com.example.myapplication.layouts.CoordinatorLayoutActivity
+import com.example.myapplication.layouts.EditProfileActivity
 import com.example.myapplication.layouts.FrameLayoutActivity
 import com.example.myapplication.layouts.GridLayoutActivity
 import com.example.myapplication.layouts.LinearLayoutActivity
@@ -63,6 +64,12 @@ class MainActivity : AppCompatActivity() {
         val constraintScreen = findViewById<Button>(R.id.buttonConstraintScreen)
         constraintScreen.setOnClickListener {
             val intent = Intent(this, ConstraintScreenActivity::class.java)
+            startActivity(intent)
+        }
+
+        val editProfilrBtn = findViewById<Button>(R.id.buttonEditProfile)
+        editProfilrBtn.setOnClickListener {
+            val intent = Intent(this, EditProfileActivity::class.java)
             startActivity(intent)
         }
     }

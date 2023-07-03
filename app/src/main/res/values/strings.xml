@@ -10,6 +10,15 @@
         <item>Russia</item>
         <item>Turky</item>
     </string-array>
+    <string-array name="feedback_array">
+        <item>Praise</item>
+        <item>Bugs</item>
+        <item>Review</item>
+        <item>Satisfactory</item>
+        <item>Neutral</item>
+        <item>Not-Satisfactory</item>
+        <item>Suggestion</item>
+    </string-array>
     <string name="title_activity_coordinator_layout">Google</string>
     <string name="large_text" formatted="true">
 "          Google LLC (/ˈɡuːɡəl/ (listen)) is an American multinational technology company focusing on artificial intelligence,[9] online advertising,
@@ -42,4 +51,11 @@ Google and YouTube are the two most visited websites worldwide followed by Faceb
         On the list of most valuable brands, Google is ranked second by Forbes[18] and fourth by Interbrand.[19] It has received significant criticism involving issues such as privacy concerns, tax avoidance, censorship, search neutrality, antitrust and abuse of its monopoly position."
     </string>
     <string name="action_settings">Settings</string>
+    <string name="enter_feedback_details_to_send_to_developer">Enter feedback details to send to developer:</string>
+    <string name="enter_your_full_name">Your Name</string>
+    <string name="your_e_mail_address">Your E-mail</string>
+    <string name="your_password">Your Password</string>
+    <string name="feedback_details">Feedback Details...</string>
+    <string name="would_you_like_an_e_mail_response">Would you like an e-mail response?</string>
+    <string name="send_feedback">Send Feedback</string>
 </resources>

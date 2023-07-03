@@ -71,14 +71,16 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         />
+
     <Spinner
         android:id="@+id/country_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:tooltipText="Select the Country"/>
+        android:layout_marginEnd="20dp"
+        android:tooltipText="Select the Country" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
