@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         toolbar = findViewById(R.id.myTollBar)
-        setSupportActionBar(toolbar)
+        //setSupportActionBar(toolbar)
         layoutSetup()
     }
 
