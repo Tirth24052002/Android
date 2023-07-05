@@ -72,8 +72,8 @@
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="2dp"
             android:background="@android:color/transparent"
@@ -143,6 +143,17 @@
             app:layout_constraintStart_toStartOf="@+id/tvFirstName"
             app:layout_constraintTop_toBottomOf="@id/tvFirstName" />
 
+        <TextView
+            android:id="@+id/fnError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Name"
+            app:layout_constraintTop_toBottomOf="@id/etFirstName"
+            app:layout_constraintStart_toStartOf="@id/etFirstName"
+            android:visibility="invisible"
+            android:textColor="#077579"/>
+
+
         <EditText
             android:id="@+id/etLastName"
             android:layout_width="0dp"
@@ -162,10 +173,20 @@
             app:layout_constraintTop_toBottomOf="@id/tvLastName" />
 
         <TextView
+            android:id="@+id/lnError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter last Name"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/etLastName"
+            app:layout_constraintStart_toStartOf="@id/etLastName"
+            android:textColor="#077579"
+        />
+        <TextView
             android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="30dp"
             android:text="Address"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -178,7 +199,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="25dp"
             android:background="@drawable/textviewblackborder"
             android:hint="Enter address "
             android:minHeight="48dp"
@@ -189,12 +210,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/tvAddress"
             app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+        <TextView
+            android:id="@+id/adrError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your address"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/etAddress"
+            app:layout_constraintStart_toStartOf="@id/etAddress"
+            android:textColor="#077579"
+            />
 
         <TextView
             android:id="@+id/tvCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="25dp"
             android:text="City"
             android:textColor="#808498"
             android:textSize="18sp"
@@ -208,7 +239,7 @@
             android:id="@+id/tvState"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="25dp"
             android:text="State"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -235,6 +266,17 @@
             app:layout_constraintStart_toStartOf="@+id/etAddress"
             app:layout_constraintTop_toBottomOf="@id/tvCity" />
 
+        <TextView
+            android:id="@+id/cityError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter city "
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/etCity"
+            app:layout_constraintStart_toStartOf="@id/etCity"
+            android:textColor="#077579"
+            />
+
         <EditText
             android:id="@+id/etState"
             android:layout_width="0dp"
@@ -242,7 +284,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/textviewblackborder"
-            android:hint="Enter state  "
+            android:hint="Enter state"
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingStart="12sp"
@@ -254,12 +296,23 @@
             app:layout_constraintStart_toStartOf="@id/tvState"
             app:layout_constraintTop_toBottomOf="@id/tvState" />
 
+        <TextView
+            android:id="@+id/stateError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter state"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/etState"
+            app:layout_constraintStart_toStartOf="@id/etState"
+            android:textColor="#077579"
+            />
+
 
         <TextView
             android:id="@+id/tvZipCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="25dp"
             android:text="Zip Code"
             android:textColor="#808498"
             android:textSize="18sp"
@@ -273,7 +326,7 @@
             android:id="@+id/tvCountry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="25dp"
             android:text="Country"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -301,6 +354,17 @@
             app:layout_constraintStart_toStartOf="@+id/etAddress"
             app:layout_constraintTop_toBottomOf="@id/tvZipCode" />
 
+        <TextView
+            android:id="@+id/zipError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter zip code"
+            android:visibility="invisible"
+            android:textColor="#077579"
+            app:layout_constraintTop_toBottomOf="@id/etZipCode"
+            app:layout_constraintStart_toStartOf="@id/etZipCode"
+            />
+
 
         <Spinner
             android:id="@+id/spinnerSelectCountry"
@@ -320,7 +384,7 @@
             android:id="@+id/tvMobileNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="25dp"
             android:text="Mobile Number"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -346,6 +410,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/tvMobileNumber"
             app:layout_constraintTop_toBottomOf="@id/tvMobileNumber" />
+
+        <TextView
+            android:id="@+id/mobileError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter mobile number"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/etMobileNumber"
+            app:layout_constraintStart_toStartOf="@id/etMobileNumber"
+            android:textColor="#077579"
+            />
 
         <TextView
             android:id="@+id/tvLoginInformation"

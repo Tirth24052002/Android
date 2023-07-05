@@ -25,4 +25,11 @@
 
     <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="CustomError" parent="Widget.MaterialComponents.TextInputLayout.FilledBox" >
+        <item name="errorTextColor">@color/purple_500</item>
+    </style>
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>
