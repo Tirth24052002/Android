@@ -6,8 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-    <include
-        layout="@layout/appbar"
-        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnListView"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="18sp"
+        android:text="List View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAffermation"
+        android:layout_width="153dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="50sp"
+        android:text="Affermation Screen"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnListView"
+        app:layout_constraintStart_toStartOf="@+id/btnListView"
+        app:layout_constraintTop_toBottomOf="@+id/btnListView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
