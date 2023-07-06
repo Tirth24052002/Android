@@ -9,12 +9,12 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnListView"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="176dp"
+        android:layout_height="73dp"
         android:layout_marginTop="100dp"
-        android:textSize="18sp"
         android:text="List View"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,8 +24,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonAffermation"
-        android:layout_width="153dp"
-        android:layout_height="74dp"
+        android:layout_width="180dp"
+        android:layout_height="78dp"
         android:layout_marginTop="50sp"
         android:text="Affermation Screen"
         android:textAllCaps="false"
@@ -34,4 +34,27 @@
         app:layout_constraintStart_toStartOf="@+id/btnListView"
         app:layout_constraintTop_toBottomOf="@+id/btnListView" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonBottomNavigation"
+        android:layout_width="183dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="50sp"
+        android:text="Bottom Navigation"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAffermation"
+        app:layout_constraintStart_toStartOf="@+id/buttonAffermation"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAffermation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExapndableRecyclerView"
+        android:layout_width="185dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="50sp"
+        android:text="Expandable Recycler View"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBottomNavigation"
+        app:layout_constraintStart_toStartOf="@+id/buttonBottomNavigation"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBottomNavigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>
