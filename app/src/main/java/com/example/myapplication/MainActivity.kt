@@ -9,12 +9,14 @@ import com.example.myapplication.recyclerView.AffermationsActivity
 import com.example.myapplication.recyclerView.ButtonNavigationActivity
 import com.example.myapplication.recyclerView.expandableRecyclerView.ExpandableRecyclerViewActivity
 import com.example.myapplication.recyclerView.ListViewActivity
+import com.example.myapplication.recyclerView.gesturerecyclerview.GestureRecyclerViewActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var lvbtn: Button
     lateinit var btnAffermation: Button
     lateinit var btnButtomNavigation: Button
     lateinit var btnExpandableRecyclerView: Button
+    lateinit var btnGestureRv: Button
     private var toolbar: Toolbar? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpButton() {
+        btnGestureRv = findViewById(R.id.btnGestureRv)
         lvbtn = findViewById(R.id.btnListView)
         btnAffermation = findViewById(R.id.buttonAffermation)
         btnButtomNavigation = findViewById(R.id.buttonBottomNavigation)
@@ -44,6 +47,11 @@ class MainActivity : AppCompatActivity() {
 
         btnExpandableRecyclerView.setOnClickListener {
             val intent = Intent(this, ExpandableRecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnGestureRv.setOnClickListener {
+            val intent = Intent(this, GestureRecyclerViewActivity::class.java)
             startActivity(intent)
         }
     }

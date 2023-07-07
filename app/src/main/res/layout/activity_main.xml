@@ -57,4 +57,18 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonBottomNavigation"
         app:layout_constraintStart_toStartOf="@+id/buttonBottomNavigation"
         app:layout_constraintTop_toBottomOf="@+id/buttonBottomNavigation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGestureRv"
+        android:layout_width="185dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="50sp"
+        android:text="Gesture Recycler View"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnExapndableRecyclerView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnExapndableRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/btnExapndableRecyclerView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

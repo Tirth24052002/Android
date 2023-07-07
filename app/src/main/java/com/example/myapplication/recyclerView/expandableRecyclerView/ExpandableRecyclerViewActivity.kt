@@ -2,9 +2,13 @@ package com.example.myapplication.recyclerView.expandableRecyclerView
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.SimpleAdapter
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.recyclerView.RecyclerItemClickListener
 
 class ExpandableRecyclerViewActivity : AppCompatActivity() {
     private lateinit var parentRecyclerView: RecyclerView
@@ -23,6 +27,20 @@ class ExpandableRecyclerViewActivity : AppCompatActivity() {
         prepareData()
         val adapter = ParentRecyclerViewAdapter(parentList)
         parentRecyclerView.adapter = adapter
+        parentRecyclerView.addOnItemTouchListener(
+            RecyclerItemClickListener(applicationContext, parentRecyclerView, object : RecyclerItemClickListener.OnItemClickListener {
+                override fun onItemClick(view: View?, position: Int) {
+                    Toast.makeText(this@ExpandableRecyclerViewActivity," Recycler View Item is clicked $position",
+                        Toast.LENGTH_SHORT).show()
+                }
+
+                override fun onLongItemClick(view: View?, position: Int) {
+                    parentList.removeAt(position)
+                    adapter.notifyItemRemoved(position)
+                }
+
+            })
+        )
     }
 
     private fun  prepareData() {
