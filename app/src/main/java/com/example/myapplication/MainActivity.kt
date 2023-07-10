@@ -10,6 +10,7 @@ import com.example.myapplication.recyclerView.ButtonNavigationActivity
 import com.example.myapplication.recyclerView.expandableRecyclerView.ExpandableRecyclerViewActivity
 import com.example.myapplication.recyclerView.ListViewActivity
 import com.example.myapplication.recyclerView.gesturerecyclerview.GestureRecyclerViewActivity
+import com.example.myapplication.recyclerView.viewPager.ViewPagerActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var lvbtn: Button
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnButtomNavigation: Button
     lateinit var btnExpandableRecyclerView: Button
     lateinit var btnGestureRv: Button
+    lateinit var btnViewPager: Button
     private var toolbar: Toolbar? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpButton() {
+        btnViewPager = findViewById(R.id.btnViewPager)
         btnGestureRv = findViewById(R.id.btnGestureRv)
         lvbtn = findViewById(R.id.btnListView)
         btnAffermation = findViewById(R.id.buttonAffermation)
@@ -52,6 +55,11 @@ class MainActivity : AppCompatActivity() {
 
         btnGestureRv.setOnClickListener {
             val intent = Intent(this, GestureRecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnViewPager.setOnClickListener {
+            val intent = Intent(this, ViewPagerActivity::class.java)
             startActivity(intent)
         }
     }
