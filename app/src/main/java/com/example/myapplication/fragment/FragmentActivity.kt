@@ -2,6 +2,7 @@ package com.example.myapplication.fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.widget.Button
 import androidx.fragment.app.commit
@@ -14,6 +15,7 @@ class FragmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_fragment)
         setButtons()
     }
+
 
     private fun setButtons() {
         btnfragment1 = findViewById(R.id.btnFragment1)

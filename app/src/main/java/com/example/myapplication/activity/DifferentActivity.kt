@@ -18,6 +18,8 @@ class DifferentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_different)
         setUpButtons()
+        val message =  intent.getStringExtra(Intent.EXTRA_TEXT)
+        Log.d(TAG,message ?: "")
     }
 
     override fun onStart() {
