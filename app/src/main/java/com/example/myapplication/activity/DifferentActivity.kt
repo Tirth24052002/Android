@@ -1,5 +1,6 @@
 package com.example.myapplication.activity
 
+import android.app.PendingIntent
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -51,6 +52,7 @@ class DifferentActivity : AppCompatActivity() {
         btnAnotherActivity.setOnClickListener {
             val intent = Intent(this, AnotherActivity::class.java)
             startActivity(intent)
+            val pendingIntent= PendingIntent.getActivity(this,1,intent, PendingIntent.FLAG_UPDATE_CURRENT )
         }
         btnExplictIntent = findViewById(R.id.btnExplicitIntent)
         btnExplictIntent.setOnClickListener {
