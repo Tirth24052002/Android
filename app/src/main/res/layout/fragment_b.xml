@@ -12,15 +12,18 @@
 
     <EditText
         android:id="@+id/edit_text"
-        android:hint="Enter the data to pass"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp" />
+        android:hint="@string/enter_the_data_to_pass2"
+        android:minHeight="48dp"
+        android:inputType="textPassword"
+        android:textColorHint="#263238"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/button_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ok" />
+        android:text="@string/ok1" />
 
 </LinearLayout>

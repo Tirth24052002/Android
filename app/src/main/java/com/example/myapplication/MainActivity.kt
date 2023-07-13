@@ -6,8 +6,11 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.myapplication.activity.DifferentActivity
+import com.example.myapplication.bundledatapassing.BundleDataPassingActivity
+import com.example.myapplication.callbackactivity.CallBackActivity
 import com.example.myapplication.dictionaryapp.DictionaryAppActivity
 import com.example.myapplication.fragment.FragmentActivity
+import com.example.myapplication.navdatapassing.NavigationActivity
 import com.example.myapplication.shareviewmodel.SharedViewActivity
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnFragments: Button
     private lateinit var btnDictionaryApp: Button
     private lateinit var btnSharedView: Button
+    private lateinit var btnCallBack: Button
+    private lateinit var btnBundle: Button
+    private lateinit var btnNavigation: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +36,9 @@ class MainActivity : AppCompatActivity() {
         btnFragments = findViewById(R.id.btnFragment)
         btnDictionaryApp = findViewById(R.id.btnDictionaryApp)
         btnSharedView = findViewById(R.id.btnSharedViewModel)
+        btnCallBack = findViewById(R.id.btnCallback)
+        btnBundle = findViewById(R.id.btnBundle)
+        btnNavigation = findViewById(R.id.btnNavigation)
 
         btnActivities.setOnClickListener {
             val intent = Intent(this, DifferentActivity::class.java)
@@ -48,6 +57,21 @@ class MainActivity : AppCompatActivity() {
 
         btnSharedView.setOnClickListener {
             val intent = Intent(this, SharedViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnCallBack.setOnClickListener {
+            val intent = Intent(this, CallBackActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnBundle.setOnClickListener {
+            val intent = Intent(this, BundleDataPassingActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnNavigation.setOnClickListener {
+            val intent = Intent(this, NavigationActivity::class.java)
             startActivity(intent)
         }
     }

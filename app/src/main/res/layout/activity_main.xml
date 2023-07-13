@@ -8,27 +8,28 @@
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
     <include
         layout="@layout/appbar"
         />
 
         <Button
             android:id="@+id/btnActivities"
-            android:layout_width="wrap_content"
+            android:layout_width="283dp"
             android:layout_height="wrap_content"
-            android:text="Different Activity"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="100dp"
+            android:text="@string/different_activity"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="100dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnFragment"
-            android:layout_width="wrap_content"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="96dp"
-            android:text="Fragment Activity"
+            android:text="@string/fragment_activity"
             app:layout_constraintEnd_toEndOf="@id/btnActivities"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@id/btnActivities"
@@ -37,24 +38,58 @@
 
         <Button
             android:id="@+id/btnDictionaryApp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="282dp"
+            android:layout_height="51dp"
             android:layout_marginTop="96dp"
-            android:text="Dictionary App"
+            android:text="@string/dictionary_app"
             app:layout_constraintEnd_toEndOf="@id/btnFragment"
             app:layout_constraintStart_toStartOf="@id/btnFragment"
             app:layout_constraintTop_toTopOf="@id/btnFragment" />
 
         <Button
             android:id="@+id/btnSharedViewModel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="275dp"
+            android:layout_height="49dp"
             android:layout_marginTop="92dp"
-            android:text="Shared View"
+            android:text="@string/shared_view"
             app:layout_constraintEnd_toEndOf="@id/btnDictionaryApp"
             app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="@id/btnDictionaryApp"
             app:layout_constraintTop_toTopOf="@id/btnDictionaryApp" />
+
+        <Button
+            android:id="@+id/btnCallback"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="92dp"
+            android:text="@string/call_back"
+            app:layout_constraintEnd_toEndOf="@id/btnSharedViewModel"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@id/btnSharedViewModel"
+            app:layout_constraintTop_toTopOf="@id/btnSharedViewModel" />
+
+        <Button
+            android:id="@+id/btnBundle"
+            android:layout_width="275dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="92dp"
+            android:text="@string/bundle_data_passing"
+
+            app:layout_constraintEnd_toEndOf="@id/btnCallback"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@id/btnCallback"
+            app:layout_constraintTop_toTopOf="@id/btnCallback" />
+
+        <Button
+            android:id="@+id/btnNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:text="@string/navigation_data_passing"
+            app:layout_constraintEnd_toEndOf="@id/btnBundle"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@id/btnBundle"
+            app:layout_constraintTop_toTopOf="@id/btnBundle" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

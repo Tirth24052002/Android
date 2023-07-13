@@ -32,4 +32,34 @@
     <string name="order_details">Quantity: %1$s cupcakes \n Flavor: %2$s \nPickup date: %3$s \n
         Total: %4$s \n\n Thank you!</string>
     <string name="the_item_will_be_shown_here">The item will be shown here</string>
+    <string name="enter_the_data_to_pass">Enter the data to pass</string>
+    <string name="send1">Send</string>
+    <string name="different_activity">Different Activity</string>
+    <string name="fragment_activity">Fragment Activity</string>
+    <string name="dictionary_app">Dictionary App</string>
+    <string name="shared_view">Shared View</string>
+    <string name="call_back">Call Back</string>
+    <string name="bundle_data_passing">Bundle Data Passing</string>
+    <string name="age">Age</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="send_data">Send Data</string>
+    <string name="name">Name</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="another_activity">Another Activity</string>
+    <string name="explicit_intent_button">Explicit Intent Button</string>
+    <string name="implicit_intent_button">Implicit Intent Button</string>
+    <string name="go_to_google">Go to Google</string>
+    <string name="navigation_data_passing">Navigation Data passing</string>
+    <string name="go_back">Go back</string>
+    <string name="click_here_to_call_callback">Click here to call callback</string>
+    <string name="enter_the_data_to_pass1">Enter the data to pass</string>
+    <string name="ok">Ok</string>
+    <string name="enter_the_data_to_pass2">Enter the data to pass</string>
+    <string name="ok1">Ok</string>
+    <string name="description_of_fragment">Description of fragment</string>
+    <string name="title_of_fragment">Title of Fragment</string>
+    <string name="enter_text_to_send">Enter Text to send</string>
+    <string name="send2">Send</string>
+    <string name="hello">Hello!</string>
 </resources>

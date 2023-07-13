@@ -14,7 +14,6 @@ class DetailActivity : AppCompatActivity() {
         const val SEARCH_PREFIX = "https://www.google.com/search?q="
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

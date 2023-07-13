@@ -34,7 +34,6 @@ class WordAdapter(private val letterId: String, context: Context) :
         val layout = LayoutInflater.from(parent.context).inflate(R.layout.item_view, parent, false)
 
         layout.accessibilityDelegate = Accessibility
-
         return WordViewHolder(layout)
     }
 
