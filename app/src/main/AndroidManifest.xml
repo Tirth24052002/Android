@@ -12,11 +12,41 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".imagepicker.ImagePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".navdatapassing.NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bundledatapassing.BundleDataPassingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".callbackactivity.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".callbackactivity.CallBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shareviewmodel.SharedViewActivity"
+            android:exported="false" />
+        <activity android:name=".dictionaryapp.DetailActivity" />
+        <activity
+            android:name=".dictionaryapp.DictionaryAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.FragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AnotherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DifferentActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
