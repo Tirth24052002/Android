@@ -12,6 +12,33 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".recyclerView.viewPager.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.gesturerecyclerview.GestureRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.customrecyclerview.CustomRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.expandableRecyclerView.ExpandableRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.ButtonNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.GridRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.CustomListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.AffermationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.ListViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
