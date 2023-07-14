@@ -62,4 +62,5 @@
     <string name="enter_text_to_send">Enter Text to send</string>
     <string name="send2">Send</string>
     <string name="hello">Hello!</string>
+    <string name="pick_photo">Pick Photo</string>
 </resources>

@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".imagepicker.ImagePickerActivity"
+            android:exported="false" />
+        <activity
             android:name=".navdatapassing.NavigationActivity"
             android:exported="false" />
         <activity
@@ -48,4 +51,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

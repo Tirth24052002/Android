@@ -20,9 +20,8 @@ class CallBackActivity : AppCompatActivity(), MyInterface {
         btnSecondActivity = findViewById(R.id.btnFirstActivity)
         btnSecondActivity.setOnClickListener {
             setInterfaceState(this@CallBackActivity)
-            val i = 2
             val intent = Intent(this@CallBackActivity, SecondActivity::class.java)
-            startActivityForResult(intent, i)
+            startActivity(intent)
         }
     }
 

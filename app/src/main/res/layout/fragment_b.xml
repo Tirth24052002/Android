@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_the_data_to_pass2"
         android:minHeight="48dp"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:textColorHint="#263238"
         android:importantForAutofill="no" />
 

@@ -10,6 +10,7 @@ import com.example.myapplication.bundledatapassing.BundleDataPassingActivity
 import com.example.myapplication.callbackactivity.CallBackActivity
 import com.example.myapplication.dictionaryapp.DictionaryAppActivity
 import com.example.myapplication.fragment.FragmentActivity
+import com.example.myapplication.imagepicker.ImagePickerActivity
 import com.example.myapplication.navdatapassing.NavigationActivity
 import com.example.myapplication.shareviewmodel.SharedViewActivity
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnCallBack: Button
     private lateinit var btnBundle: Button
     private lateinit var btnNavigation: Button
+    private lateinit var btnImagePicker:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         btnCallBack = findViewById(R.id.btnCallback)
         btnBundle = findViewById(R.id.btnBundle)
         btnNavigation = findViewById(R.id.btnNavigation)
+        btnImagePicker = findViewById(R.id.btnPicImage)
 
         btnActivities.setOnClickListener {
             val intent = Intent(this, DifferentActivity::class.java)
@@ -72,6 +75,11 @@ class MainActivity : AppCompatActivity() {
 
         btnNavigation.setOnClickListener {
             val intent = Intent(this, NavigationActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnImagePicker.setOnClickListener {
+            val intent = Intent(this, ImagePickerActivity::class.java)
             startActivity(intent)
         }
     }
