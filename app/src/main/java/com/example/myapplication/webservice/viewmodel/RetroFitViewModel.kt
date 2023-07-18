@@ -1,24 +1,23 @@
-package com.example.myapplication.webservice
+package com.example.myapplication.webservice.viewmodel
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.util.Log
-import com.example.myapplication.R
+import androidx.lifecycle.ViewModel
+import com.example.myapplication.webservice.network.Model.LoginRequest
+import com.example.myapplication.webservice.network.Model.LoginResponse
+import com.example.myapplication.webservice.network.ApiInterface
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetroFitActivity : AppCompatActivity() {
-    private lateinit var retroFit: Retrofit
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_retro_fit)
-        callLoginApi()
-    }
+class RetroFitViewModel: ViewModel() {
 
-    private fun callLoginApi() {
+    init {
+        Log.d("TAG", ": view model called ")
+    }
+     lateinit var retroFit: Retrofit
+     fun callLoginApi() {
         val apiInterface = getRetroFitObjet().create(ApiInterface::class.java)
         val loginRequest = LoginRequest()
         loginRequest.email = "eve.holt@reqres.in"
@@ -42,4 +41,5 @@ class RetroFitActivity : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create()).build()
         return retroFit
     }
+
 }

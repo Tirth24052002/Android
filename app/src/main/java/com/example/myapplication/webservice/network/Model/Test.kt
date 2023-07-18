@@ -1,4 +1,4 @@
-package com.example.myapplication.webservice
+package com.example.myapplication.webservice.network.Model
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,4 +1,4 @@
-package com.example.myapplication.webservice
+package com.example.myapplication.webservice.network.Model
 
 data class LoginRequest(
     var email: String = "",
