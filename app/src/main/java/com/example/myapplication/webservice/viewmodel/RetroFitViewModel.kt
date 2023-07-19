@@ -2,8 +2,8 @@ package com.example.myapplication.webservice.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.example.myapplication.webservice.network.Model.LoginRequest
-import com.example.myapplication.webservice.network.Model.LoginResponse
+import com.example.myapplication.webservice.Model.LoginRequest
+import com.example.myapplication.webservice.Model.LoginResponse
 import com.example.myapplication.webservice.network.ApiInterface
 import retrofit2.Call
 import retrofit2.Callback

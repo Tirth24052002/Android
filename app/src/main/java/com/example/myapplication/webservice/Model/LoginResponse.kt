@@ -1,4 +1,4 @@
-package com.example.myapplication.webservice.network.Model
+package com.example.myapplication.webservice.Model
 
 import androidx.lifecycle.ViewModel
 import com.google.gson.annotations.SerializedName
