@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uicomponents.ComponentsActivity">
+
+    <Button
+        android:id="@+id/buttonBtn"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Toast Button"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBtn"
+        app:layout_constraintStart_toStartOf="@+id/buttonBtn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtn" />
+
+    <Button
+        android:id="@+id/buttonBtnTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Button Types"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
+
+    <Button
+        android:id="@+id/buttonTextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Text Input Layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBtnTypes"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/buttonBtnTypes"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBtnTypes"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/buttonTabLayout"
+        android:layout_width="184dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Tab Layout"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTextInputLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTextInputLayout" />
+
+    <Button
+        android:id="@+id/buttonAppBar"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="76dp"
+        android:text="App Bar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTabLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonTabLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTabLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

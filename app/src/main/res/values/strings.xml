@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="select_the_gender">Select The Gender</string>
+    <string name="fill_the_following_details_to_sign_up">Fill the Following Details to Sign Up</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="toggle_material_switch">Toggle Material Switch</string>
+    <string name="switch_with_app_compat">switch with App Compat</string>
+    <string name="switchcompat">switchcompat</string>
+    <string name="appcompattogglebutton">AppCompatToggleButton</string>
+    <string name="apply">Apply</string>
+    <string name="selected_button">Selected Button:</string>
+    <string name="three">Three</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="title_activity_tab_bar">TabBarActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_you_e_mail_address">Enter You E-mail Address</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="snack_bar_with_action">Snack Bar with Action</string>
+    <string name="snack_bar_tapped">Snack Bar Action Button is clicked</string>
+    <string name="title_activity_tab_layout">TabLayout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
