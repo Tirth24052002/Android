@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layouts.RelativeLayoutActivity">
+
+   <TextView
+       android:id="@+id/tvOne"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="label 1"
+       android:layout_alignParentLeft="true"
+       />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label 2" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOne"
+        android:layout_alignParentLeft="true"
+        android:text="label 3" />
+ <TextView
+     android:id="@+id/tvFive"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="label 5"
+     android:gravity="center"
+     android:layout_below="@+id/tvThree"
+     />
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label 4"
+        android:layout_below="@+id/tvTwo"
+        />
+
+    <TextView
+        android:id="@+id/tvSix"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvFive"
+        android:layout_height="wrap_content"
+        android:text="Label Six"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSix"
+        android:layout_centerVertical="true"
+        android:text="Label Seven" />
+
+    <TextView
+        android:id="@+id/tvEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Label Eight" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@+id/tvEight"
+        android:background="@drawable/custom_shape"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        >
+     <TextView
+         android:id="@+id/tvNine"
+         android:text="T"
+         android:textSize="50dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+      />
+    </RelativeLayout>
+</RelativeLayout>

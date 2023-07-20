@@ -12,11 +12,37 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:theme="@style/Theme.MyApplication.NoStatusBar"
+            android:name=".layouts.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.ConstraintScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.CoordinatorLayoutActivity"
+            android:exported="false"
+            android:label="@string/title_activity_coordinator_layout"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".layouts.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.GridLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layouts.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

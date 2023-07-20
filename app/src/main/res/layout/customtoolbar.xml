@@ -4,7 +4,8 @@
     android:layout_height="?attr/actionBarSize"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/myTollBar"
-    android:background="@color/purple_500"
-    app:title="All Layouts"
+    android:background="#077579"
+    app:titleTextColor="@color/white"
+    android:gravity="center"
     android:theme="@style/ThemeOverlay.AppCompat.Light">
 </androidx.appcompat.widget.Toolbar>
